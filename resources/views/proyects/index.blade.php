@@ -13,6 +13,8 @@
       <th scope="col">STARTDATE</th>
       <th scope="col">ENDDATE</th>
       <th scope="col">STIMATEDHOURS</th>
+      <th scope="col"></th>
+      <th scope="col"><a class="text-warning" href="#">ADD Proyect</a></th>
     </tr>
   </thead>
   <tbody>
@@ -25,6 +27,8 @@
           <td>{{$proyect->startDate}}</td>
           <td>{{$proyect->endDate}}</td>
           <td>{{$proyect->StimatedHours}}</td>
+          <td><a class="text-info" href="#">Edit</a></td>
+          <td><a class="text-info" href="#">Delete</a></td>
         </tr>
       @endforeach
     @endif
