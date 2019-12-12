@@ -17,4 +17,6 @@ Route::get('/', function () {
 
 Route::get('/proyects', 'ProyectController@index')->name('proyects');
 Route::get('/employees', 'EmployeeController@index')->name('employees');
+Route::get('/employees/proyect/{id}', 'EmployeeController@proyectName')->name('proyectName');
+Route::get('/proyects/employees/{id}','EmployeeController@responsable')->name('responsable');
 Route::get('/departments', 'DepartmentsCrontroller@index')->name('departments');
