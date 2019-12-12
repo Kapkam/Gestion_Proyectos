@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('home');
-});
+})-> name('home');
 
 Route::get('/proyects', 'ProyectController@index')->name('proyects');
-Route::get('/proyects', 'EmployeeController@index')->name('employees');
+Route::get('/employees', 'EmployeeController@index')->name('employees');

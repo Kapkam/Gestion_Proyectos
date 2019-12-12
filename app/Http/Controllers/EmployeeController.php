@@ -8,6 +8,6 @@ class EmployeeController extends Controller
 {
   public function index(){
     $employees = EmployeeModel::all();
-    return view('employee/index')->with('employees',$employees);
+    return view('employees/index')->with('employees',$employees);
   }
 }
