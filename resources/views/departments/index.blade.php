@@ -5,7 +5,7 @@
 @section('content')
 
 <table class="table">
-  <thead class="thead-dark">
+  <thead class="thead-dark  text-center">
     <tr>
       <th scope="col">ID</th>
       <th scope="col">NAME</th>
