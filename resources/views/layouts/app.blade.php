@@ -23,7 +23,7 @@
         <a class="nav-link" href="{{route('proyects')}}">Proyects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Departments</a>
+        <a class="nav-link" href="{{route('departments')}}">Departments</a>
       </li>
 
 
