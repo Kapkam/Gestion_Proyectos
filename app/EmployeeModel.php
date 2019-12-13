@@ -13,5 +13,9 @@ class EmployeeModel extends Model
   {
       return $this->hasOne('App\ProyectModel');
   }
+  public function department()
+{
+    return $this->belongsTo('App\DepartmentsModel');
+}
 
 }

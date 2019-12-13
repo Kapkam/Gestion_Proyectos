@@ -15,11 +15,15 @@ class Employee extends Migration
     {
       Schema::create('employees', function (Blueprint $table) {
           $table->bigIncrements('id');
+          $table->unsignedBigInteger('department_id');
           $table->string('name',100);
           $table->string('surname');
           $table->string('email',100);
           $table->string('telephone');
           $table->timestamps();
+
+          $table->foreign('department_id')->references('id')->on('departments');
+
       });
     }
 

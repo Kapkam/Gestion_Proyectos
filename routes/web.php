@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('/proyects', 'ProyectController@index')->name('proyects');
 Route::get('/employees', 'EmployeeController@index')->name('employees');
+Route::get('/employees/{id}', 'EmployeeController@show')->name('show3');
 Route::get('/proyects/responsable/{id}', 'ProyectController@responsable')->name('proyectName');
 Route::get('/employees/proyect/{id}', 'ProyectController@show')->name('show1');
 Route::get('/proyect/create', 'ProyectController@showCreate')->name('showCreate');
@@ -26,3 +27,4 @@ Route::post('/proyect/stored', 'ProyectController@store')->name('storeProyect');
 Route::post('/proyect/updated/{id}', 'ProyectController@update')->name('updateProyect');
 // Route::get('/proyects/employees/{id}','EmployeeController@responsable')->name('responsable');
 Route::get('/departments', 'DepartmentsCrontroller@index')->name('departments');
+Route::get('/departments/{id}/employees', 'DepartmentsCrontroller@showEmployees')->name('showEmployees');
