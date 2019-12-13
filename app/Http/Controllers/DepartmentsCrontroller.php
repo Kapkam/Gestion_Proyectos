@@ -21,7 +21,10 @@ class DepartmentsCrontroller extends Controller
 
   public function show($id)
   {
+    $employees = EmployeeModel::all();
     $employee = EmployeeModel::find($id);
-    return view('employees/show', ['employee' => $employee] );
+    // $department = DepartmentsModel::where('id',$employee->department)->get();
+    $department = DepartmentsModel::find($id);
+    return view('employees/index', ['department' => $department,'employees' => $employees] );
   }
 }

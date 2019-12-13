@@ -28,3 +28,4 @@ Route::post('/proyect/updated/{id}', 'ProyectController@update')->name('updatePr
 // Route::get('/proyects/employees/{id}','EmployeeController@responsable')->name('responsable');
 Route::get('/departments', 'DepartmentsCrontroller@index')->name('departments');
 Route::get('/departments/{id}/employees', 'DepartmentsCrontroller@showEmployees')->name('showEmployees');
+Route::get('/employees/department/{id}', 'DepartmentsCrontroller@show')->name('show4');
