@@ -27,6 +27,7 @@
           <td>{{$proyect->startDate}}</td>
           <td>{{$proyect->endDate}}</td>
           <td>{{$proyect->StimatedHours}}</td>
+          <td><a class="text-danger" href="{{route('proyectName', $proyect->id)}}">User</a></td>
           <td><a class="text-info" href="#">Edit</a></td>
           <td><a class="text-info" href="#">Delete</a></td>
         </tr>

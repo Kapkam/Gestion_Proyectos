@@ -21,5 +21,10 @@ class ProyectController extends Controller
     $proyect = ProyectModel::find($id);
     return view('proyects/show', ['proyect' => $proyect] );
   }
+  public function responsable($id){
+    $proyect = ProyectModel::find($id);
+    $responsable = $proyect->employee;
+    return view('employees/show', ['employee' => $responsable ] );
+  }
 
 }

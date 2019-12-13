@@ -26,7 +26,7 @@
           <td>{{$employee->surname}}</td>
           <td>{{$employee->email}}</td>
           <td>{{$employee->telephone}}</td>
-          <td><a class="text-danger" href="{{route('proyectName', $employee->id)}}">Show Proyect Name</a></td>
+          <td><a class="text-danger" href="{{route('show1', $employee->id)}}">Show Proyect Name</a></td>
           <td><a class="text-info" href="#">Edit</a></td>
           <td><a class="text-info" href="#">Delete</a></td>
         </tr>
