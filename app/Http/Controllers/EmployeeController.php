@@ -16,9 +16,9 @@ class EmployeeController extends Controller
     $employee=EmployeeModel::find($id);
     return view('proyects/index', ['proyects' => $proyects,'employee' => $employee] );
   }
-  public function proyectName($id){
-    $employees = EmployeeModel::all();
-    $proyect = ProyectModel::where('employee_id',$id);
-    return view('employees/index', ['employees' => $employees] );
+  public function show($id)
+  {
+    $employee = EmployeeModel::find($id);
+    return view('employees/show', ['employee' => $employee] );
   }
 }

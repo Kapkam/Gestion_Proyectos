@@ -16,5 +16,10 @@ class ProyectController extends Controller
     $employee=EmployeeModel::all();
     return view('proyects/edit')->with('proyect',$proyect)->with('employees',$employee);
   }
+  public function show($id)
+  {
+    $proyect = ProyectModel::find($id);
+    return view('proyects/show', ['proyect' => $proyect] );
+  }
 
 }
