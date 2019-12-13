@@ -13,8 +13,6 @@
       <th scope="col">EMAIL</th>
       <th scope="col">TELEPHONE</th>
       <th scope="col">RESPONSABLE OF</th>
-      <th scope="col"></th>
-      <th scope="col"><a class="text-warning" href="#">ADD Proyect</a></th>
     </tr>
   </thead>
   <tbody>
@@ -27,8 +25,6 @@
           <td>{{$employee->email}}</td>
           <td>{{$employee->telephone}}</td>
           <td><a class="text-danger" href="{{route('show1', $employee->id)}}">Show Proyect Name</a></td>
-          <td><a class="text-info" href="#">Edit</a></td>
-          <td><a class="text-info" href="#">Delete</a></td>
         </tr>
       @endforeach
     @endif
